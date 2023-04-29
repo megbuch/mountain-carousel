@@ -9,21 +9,20 @@
 body {
   font: 18px "Bebas Neue", Arial, sans-serif;
   line-height: 1.5;
-  height: 100vh;
   color: rgb(20, 20, 20);
 }
 
 .carousel {
   position: absolute;
   width: 100%;
-  height: 37rem;
+  height: 65vh;
   overflow: hidden;
 }
 
 .carousel-tabs {
   display: flex;
   justify-content: left;
-  padding-left: 22rem;
+  padding-left: 20%;
   align-items: center;
   background-color: #2f527a;
 }
@@ -59,13 +58,14 @@ body {
 
 img {
   width: 100vw;
-  height: 37rem;
+  height: 65vh;
   object-fit: cover;
 }
 
 header {
   gap: 8rem;
-  margin: 0rem 22rem;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 header,
@@ -84,6 +84,11 @@ header,
 .accent {
   font-size: 3rem;
   color: #2f527a;
+}
+
+.climb {
+  margin-left: -24px;
+  margin-bottom: -22px;
 }
 
 .text {
@@ -113,12 +118,9 @@ span {
   font-size: 1.7rem;
 }
 
-.schedule {
-}
-
 .main-text-wrapper {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   background-color: rgba(255, 255, 255, 0.801);
   height: 18rem;
   width: 25rem;
@@ -127,15 +129,74 @@ span {
   align-items: left;
   justify-content: center;
   gap: 1rem;
-  margin: 4rem 24rem;
+  margin: 4rem 20%;
   padding: 0 3.7rem;
+  white-space: nowrap;
 }
 
 .row {
-  font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+footer > .row {
+  gap: 0.4rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  header {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    width: 80vw;
+    flex-direction: column;
+    gap: 0;
+    margin: 1rem auto;
+  }
+
+  .big-number {
+    line-height: 1;
+  }
+
+  .accent {
+    font-size: 2.4rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-text-wrapper {
+    height: 15rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 4rem 3rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 1rem 5%;
+  }
+
+  .carousel-tabs {
+    padding: 0;
+  }
 }
