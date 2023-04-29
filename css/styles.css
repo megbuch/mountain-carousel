@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,34 +7,36 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  font: 18px "Bebas Neue", Arial, sans-serif;
   line-height: 1.5;
 }
 
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 100vh;
   overflow: hidden;
 }
 
 .carousel-tabs {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  background-color: #2f527a;
 }
 
 .carousel-tab {
-  margin: 1rem;
-  padding: 0.5rem;
+  margin: 0;
+  padding: 0.5rem 2rem;
   cursor: pointer;
-  border: 1px solid #ccc;
+  color: #bebebe;
 }
 
 .carousel-tab.active {
-  border-color: #000;
-  font-weight: bold;
+  background-color: #bebebe;
+  color: #2f527a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
 
 .carousel-item {
@@ -42,9 +46,15 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .carousel-item.active {
   opacity: 1;
+}
+
+img {
+  width: 100vw;
+  height: 40rem;
+  object-fit: cover;
 }
