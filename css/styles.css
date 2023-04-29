@@ -9,18 +9,22 @@
 body {
   font: 18px "Bebas Neue", Arial, sans-serif;
   line-height: 1.5;
+  height: 100vh;
+  color: rgb(20, 20, 20);
 }
 
 .carousel {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 37rem;
   overflow: hidden;
 }
 
 .carousel-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 22rem;
+  align-items: center;
   background-color: #2f527a;
 }
 
@@ -41,7 +45,7 @@ body {
 
 .carousel-item {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -55,6 +59,83 @@ body {
 
 img {
   width: 100vw;
-  height: 40rem;
+  height: 37rem;
   object-fit: cover;
+}
+
+header {
+  gap: 8rem;
+  margin: 0rem 22rem;
+}
+
+header,
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-number {
+  font-size: 10rem;
+  color: #a7a3a3;
+}
+
+.accent {
+  font-size: 3rem;
+  color: #2f527a;
+}
+
+.text {
+  font-family: Helvetica, sans-serif;
+}
+
+footer {
+  padding: 0.9rem 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f527a;
+  color: #4e7299;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.los-angeles {
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  line-height: 0.9;
+}
+
+span {
+  font-size: 1.7rem;
+}
+
+.schedule {
+}
+
+.main-text-wrapper {
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.801);
+  height: 18rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem 24rem;
+  padding: 0 3.7rem;
+}
+
+.row {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
